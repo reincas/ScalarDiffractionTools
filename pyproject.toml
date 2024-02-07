@@ -1,0 +1,30 @@
+# pyproject.toml
+[build-system]
+requires = [
+    "setuptools",
+	"numpy",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "scalardiffract",
+]
+
+[project]
+name = "ScalarDiffractionTools"
+version = "0.9.1"
+authors = [
+    { name = "Reinhard Caspary", email = "r.caspary@posteo.de"},
+]
+description = "A tool box for optical scalar diffraction"
+readme = "README.md"
+dependencies = [
+    'numpy>=1.15',
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
