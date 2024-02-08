@@ -15,7 +15,7 @@ import scalardiffract as sdt
 #wl = 1550e-9
 
 # Number of DOE pixels
-n_src = 512
+n_src = 128
 
 # Pixel pitch of the DOE in wavelength units
 p_src = 1200.0 / n_src

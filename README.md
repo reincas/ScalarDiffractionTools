@@ -1,10 +1,22 @@
-# ScalarDiffractionTools for Python
+# ScalarDiffractionTools
 
-This a Python 3 library providing tools for scalar diffraction calculations.
+Python 3 package providing tools for scalar diffraction calculations.
+
 
 ## Installation
 
-The easiest way to install the latest version of [`ScalarDiffractionTools`](https://pypi.org/project/scalardiffractiontools/) is using PIP:
+To build and install the package, run the command
+
 ```
->>> pip install ScalarDiffractionTools
+python -m pip install .
 ```
+
+To clean all intermediate files and directories, run
+```
+python clean.py
+```
+
+
+## Usage examples
+
+See Python scripts in the directory `test`.
