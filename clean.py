@@ -7,9 +7,19 @@
 import glob
 import shutil
 
-globs = ["./build/", "./dist/", "./*.egg-info/", "./**/__pycache__/"]
+GLOBS = ["./build/", "./dist/", "./*.egg-info/", "./**/__pycache__/"]
 
-for pattern in globs:
-    for path in glob.iglob(pattern):
-        shutil.rmtree(path)
+def clean(globs=None):
 
+    if globs is None:
+        globs = GLOBS
+        
+    for pattern in globs:
+        for path in glob.iglob(pattern):
+            print("Removing '%s'" % path)
+            shutil.rmtree(path)
+
+
+if __name__ == '__main__':
+
+    clean()
